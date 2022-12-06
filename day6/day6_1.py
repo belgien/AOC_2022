@@ -5,10 +5,9 @@ def readFile(filename):
     return [*lines[0]]
 
 def solve(lines, messageSize):
-    for index in range(len(lines)):
-        if index >= messageSize - 1:
-            if len(set(lines[index-messageSize:index])) == messageSize:
-                return index
+    for index in range(len(lines) - messageSize):
+            if len(set(lines[index:index+messageSize])) == messageSize:
+                return index + messageSize
 
 if __name__ == "__main__":
     print("Part 1 total: " + str(solve(readFile("day6/day6_input.txt"), 4)))
