@@ -10,5 +10,5 @@ def solve(lines, messageSize):
                 return index + messageSize
 
 if __name__ == "__main__":
-    print("Part 1 total: " + str(solve(readFile("day6/day6_input.txt"), 4)))
-    print("Part 2 total: " + str(solve(readFile("day6/day6_input.txt"), 14)))
+    print("Part 1 total: " + str(solve(readFile("day6/day6_input"), 4)))
+    print("Part 2 total: " + str(solve(readFile("day6/day6_input"), 14)))
